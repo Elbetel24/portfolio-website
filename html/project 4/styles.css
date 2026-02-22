@@ -1,0 +1,66 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:4px;
+    background-color: bisque;
+    line-height:1.0;
+
+}
+
+header {
+    background-color: rgb(114, 92, 66);
+    border: 12px;
+    margin:10px;
+    padding:10px 20px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+   gap:20px;
+    padding: 20px 50px;
+    min-height: 100vh; /* Changed from size */
+}
+
+.image-card {
+    flex: 0 0 50%; /* Allow it to grow/shrink naturally */
+    padding: 10px;
+    background-color: rgb(193, 157, 103);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex-direction:column;
+}
+
+.image-card img {
+    width: 100%;     /* Makes the image as wide as the card */
+    height: auto;    /* Keeps the image from looking stretched */
+    display: block;  /* Removes weird tiny gaps at the bottom */
+    border-radius: 8px; /* Optional: matches your card corners */
+}
+
+.landing-page {
+    background-color: rgb(193, 157, 103);
+    flex: 0 0 50%; /* Match the image card */
+    flex-direction:column;
+    min-height: 200px;
+    font-size: 45px; /* 100px is massive; adjusted for sanity */
+    line-height: 1.2; /* Adjusted from 5 to be readable */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn {
+    background-color: rgb(183, 217, 217);
+    border-radius: 12px;
+
+}
+
+
+
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: aquamarine;
+}

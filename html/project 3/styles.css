@@ -1,0 +1,104 @@
+body {
+    font-family:'Poppins', sans-serif;
+    margin:5;
+    background-color: rgb(230, 193, 137);
+    line-height:1.5;
+}
+
+header {
+    background-color: rgb(82, 69, 50);
+    color:white;
+    display : flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px 50px;
+    
+}
+.main {
+    display: flex;
+}
+
+
+#about {
+    flex:1;
+     background-color: rgb(99, 68, 21);
+    margin: 40px 10px;
+    padding: 80px;
+    border-radius: 12px;
+    width: 60%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+#skills {
+    flex:1;
+     background-color: rgb(99, 68, 21);
+    margin: 40px 10px;
+    padding: 80px;
+    border-radius: 12px;
+    width: 60%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#projects {
+    flex:1;
+     background-color: rgb(99, 68, 21);
+    margin: 40px 10px;
+    padding: 80px;
+    border-radius: 12px;
+    width: 60%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#contact {
+    flex:1;
+     background-color: rgb(99, 68, 21);
+    margin: 40px 10px;
+    padding: 80px;
+    border-radius: 12px;
+    width: 60%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+header h1{
+    margin: 0;
+}
+
+
+header nav ul {
+    list-style:none;
+    display:flex;
+    gap:20px;
+    margin:0;
+    padding:0;
+
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: rgb(214, 192, 236);
+}
+
+section {
+    padding: 80px;
+    text-align: left;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: rgb(41, 36, 29);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
