@@ -1,1 +1,0 @@
-# Codédex Cafe Finder TEMPLATE
