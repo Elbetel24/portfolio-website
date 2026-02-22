@@ -18,9 +18,29 @@ document.getElementById('btn-login').onclick = async () => {
   if (res.token) { setToken(res.token); showApp(); loadExpenses(); }
 };
 
+// Toggle between signup and login forms
+document.getElementById('show-login')?.addEventListener('click', (e)=>{
+  e.preventDefault();
+  document.getElementById('signup').style.display = 'none';
+  document.getElementById('login').style.display = 'block';
+});
+document.getElementById('show-signup')?.addEventListener('click', (e)=>{
+  e.preventDefault();
+  document.getElementById('login').style.display = 'none';
+  document.getElementById('signup').style.display = 'block';
+});
+
 document.getElementById('btn-logout').onclick = () => { setToken(null); showAuth(); };
 
-function showAuth(){ document.getElementById('auth').style.display='flex'; document.getElementById('app').style.display='none'; }
+function showAuth(){
+  document.getElementById('auth').style.display='flex';
+  document.getElementById('app').style.display='none';
+  // Ensure signup is shown by default when auth is visible
+  const su = document.getElementById('signup');
+  const li = document.getElementById('login');
+  if (su) su.style.display = 'block';
+  if (li) li.style.display = 'none';
+}
 function showApp(){ document.getElementById('auth').style.display='none'; document.getElementById('app').style.display='block'; }
 
 if (localStorage.getItem('token')) { showApp(); loadExpenses(); } else showAuth();

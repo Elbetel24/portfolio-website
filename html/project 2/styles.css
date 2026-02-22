@@ -1,0 +1,48 @@
+body {
+    background-color: blanchedalmond;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading */
+#heading {
+    text-align: center;
+}
+
+/* Recipe layout */
+.recipe {
+    background-color: rgb(41, 36, 29);
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 40px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: white;
+}
+.recipe-layout{
+    flex:1;
+}
+
+/* Image */
+.recipe-image {
+    flex: 1;
+    height:80%;
+}
+
+.recipe-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Ingredients list */
+.Ingredients {
+    list-style: none;
+    padding: 0;
+}
+
